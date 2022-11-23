@@ -1,0 +1,4 @@
+# ignore dependent and generated tools
+
+node_modules
+.angular
