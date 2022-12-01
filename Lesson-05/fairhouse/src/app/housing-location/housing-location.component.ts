@@ -16,7 +16,7 @@ import { HousingLocation } from '../housing-location';
 })
 export class HousingLocationComponent implements OnInit {
 
-  @Input() housingLocation: HousingLocation;
+  @Input() housingLocation!: HousingLocation;
 
   constructor() { }
 
