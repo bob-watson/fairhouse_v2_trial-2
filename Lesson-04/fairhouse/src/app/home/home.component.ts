@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
+import { HousingLocation } from '../housing-location';
 
 @Component({
   selector: 'app-home',
@@ -38,5 +39,20 @@ import { HousingLocationComponent } from '../housing-location/housing-location.c
   ]
 })
 export class HomeComponent {
+
+  onlyHouse : HousingLocation;
+
+  constructor() {
+    this.onlyHouse = {
+      id: 9999,
+      name: "Test Home",
+      city: "Test city",
+      state: "ST",
+      photo: "photo URL goes here",
+      availableUnits: 99,
+      wifi: true,
+      laundry: false,
+    };
+  }
 
 }
