@@ -7,6 +7,8 @@ import { HousingLocation } from '../housing-location';
   standalone: true,
   imports: [CommonModule],
   template: `
+    <h1>{{this.housingLocation.name}}</h1>
+    <p><code>{{this.housingLocation | json}}</code></p>
     <p>
       housing-location works!
     </p>
